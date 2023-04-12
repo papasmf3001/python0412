@@ -1,0 +1,14 @@
+# ChatGPT_데모스크립트02.py
+위에 있는 코드에 주석을 추가해줘 
+
+#1) Define a function with parameter and local variable
+def setValue(newValue: int) -> None: # Takes an integer argument `newValue` and returns nothing
+    x = newValue # Set the value of `newValue` to a local variable `x`
+    print("local variable:", x) # Print the value of `x`
+
+#api키를 볼 수 있는 주소 
+https://platform.openai.com/account/api-keys
+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
+
+!pip install openai
+
