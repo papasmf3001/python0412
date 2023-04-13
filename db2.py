@@ -2,7 +2,9 @@
 import sqlite3
 
 #연결객체 생성(일단 메모리에서 임시 사용)
-con = sqlite3.connect(":memory:")
+#con = sqlite3.connect(":memory:")
+con = sqlite3.connect("c:\\work\\sample2.db")
+
 #커서 객체를 생성
 cur = con.cursor() 
 #데이터를 저장한 테이블 구조(스키마) 생성 
@@ -25,3 +27,5 @@ cur.execute("select * from PhoneBook;")
 for row in cur:
     print(row)
 
+#작업을 완료하고 종료(예를 들면 오토커밋)
+con.commit() 
